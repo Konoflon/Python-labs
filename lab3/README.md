@@ -30,7 +30,6 @@ N=2^m*3^n, где m — чётное число, n — нечётное числ
 5. Протестировал программу и зафиксировал результаты
 ```python
 import itertools
-import itertools
 
 
 def task1_vasya_words():
