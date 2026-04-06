@@ -58,7 +58,8 @@ fig.show()
 - Угловой коэффициент: k ≈ 3.386
 - Уравнение касательной: y = 1 + 3.386(x - 1)
 
-Создан интерактивный HTML-график с помощью Plotly, доступный по ссылке.
+Создан интерактивный HTML-график с помощью Plotly, доступный по ссылке:
+https://konoflon.github.io/Python-labs/lab2/well-done/plot.html
 
 ## Использованные источники:
 1. [Plotly](https://plotly.com/python/)
