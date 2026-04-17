@@ -90,9 +90,8 @@ class ExpenseTracker:
             messagebox.showwarning("Внимание", "Выберите строку для удаления")
             return
             
-        item = self.tree.item(selected[0])
-        val = item['values']
-        self.expenses = [e for e in self.expenses if not (e['date'] == val[0] and e['amount'] == val[3])]
+        index = self.tree.index(selected[0])
+        self.expenses.pop(index)
         
         self.save_data()
         self.refresh_table()
