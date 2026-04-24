@@ -29,16 +29,27 @@
 
 ## 2. Описание проделанной работы
 
-Создал пакет modules с тремя модулями и CLI-интерфейс на main.py.
+Создал пакет modules с тремя модулями и веб-приложение на FastAPI в main.py.
 
 Что внутри:
-- lab4.py: Функции split_iter/rec и calc_v_iter/rec с кэшированием.
-- lab5.py: Декоратор @safe_execute и валидация диапазона.
-- lab6.py: Генератор weather_generator, запросы через requests, расшифровка WMO-кодов.
-
-## 3. Скриншот
+- lab4.py: Функции split_iter_opt/split_rec_opt для разбиения списка и calc_v_iter_opt/calc_v_rec_opt для вычисления рекуррентной последовательности (с @lru_cache для оптимизации рекурсии).
+- lab5.py: Класс-декоратор @safe_execute для обработки исключений и класс-валидатор range_validator для проверки диапазона значений.
+- lab6.py: Функции get_weather, sequential, parallel для получения прогноза погоды через Open-Meteo API с поддержкой многопоточности через ThreadPoolExecutor.
+## 3. Как запустить
+### Установка зависимостей
+```bash
+# Установить пакеты
+pip install -r requirements.txt
+```
+### Запуск веб-приложеня
+```bash
+uvicorn main:app --reload
+```
+### Веб-приложение
+Веб приложение доступно по ссылке `http://127.0.0.1:8000/docs`
+## 4. Скриншот
 
 ![Результат работы программы](img/result.png)
 
-## 4. Ссылки на используемые материалы
-1. [Typer](https://typer.tiangolo.com/#use-typer-in-your-code)
+## 5. Ссылки на используемые материалы
+1. [FastAPI](https://fastapi.tiangolo.com/)
